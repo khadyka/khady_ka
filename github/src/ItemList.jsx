@@ -5,7 +5,7 @@ function ParentComponent() {
   const [items, setItems] = useState([
     { id: 1, name: 'Article 1', bought: false },
     { id: 2, name: 'Article 2', bought: true },
-    // ... autres articles ...
+
   ]);
 
   const toggleItem = (itemId) => {

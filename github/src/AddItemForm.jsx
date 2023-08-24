@@ -4,7 +4,7 @@ import AddItemForm from './AddItemForm'; // Assurez-vous que le chemin d'accès 
 function ParentComponent() {
   const [items, setItems] = useState([]);
 
-  const addItem = (itemName) => {
+  const adddItem = (itemName) => {
     const newItem = { id: Date.now(), name: itemName };
     setItems([...items, newItem]);
   };
@@ -17,7 +17,7 @@ function ParentComponent() {
           <li key={item.id}>{item.name}</li>
         ))}
       </ul>
-      <AddItemForm addItem={addItem} />
+      <AddItemForm addItem={adddItem} />
     </div>
   );
 }

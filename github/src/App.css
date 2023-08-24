@@ -15,7 +15,7 @@ ul {
 li {
   display: flex;
   align-items: center;
-  margin: 5px 0;
+  margin: 6px 0;
 }
 
 input[type="checkbox"] {

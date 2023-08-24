@@ -6,7 +6,7 @@ import ItemList from './ItemList';
 function App() {
   const [items, setItems] = useState([]);
 
-  const addItem = (itemName) => {
+  const adddItem = (itemName) => {
     setItems([...items, { id: Date.now(), name: itemName, bought: false }]);
   };
 
@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <h1>Ma Liste de Courses</h1>
-      <AddItemForm addItem={addItem} />
+      <AddItemForm addItem={adddItem} />
       <ItemList items={items} toggleItem={toggleItem} removeItem={removeItem} />
     </div>
   );
